@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Circe";
+    src: local("Circe"),
+     url(../static/font/CirceRegular.ttf) format("truetype");
+}
+
+html {
+    font-family: "Circe";
+}
