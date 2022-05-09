@@ -23,7 +23,7 @@
               alt="myBusiness"
               class="header__pic"
             />
-            <div class="header__onlineHelp">Онлайн помощник</div>
+            <a href="#!" class="header__onlineHelp">Онлайн помощник</a>
           </div>
         </div>
         <div class="bottomHeader">
@@ -252,6 +252,8 @@ export default {
     width: 100vh;
   }
 }
+
+/* Header styles start */
 .header__wrapper {
   max-width: 1111px;
   margin: 0 auto;
@@ -296,6 +298,9 @@ export default {
 .header__onlineHelp:active {
   opacity: 0.75;
 }
+/* Header styles end */
+
+/* UnderHeader styles start */
 .bottomHeader__wrapper {
   max-width: 1111px;
   margin: 0 auto;
@@ -355,6 +360,9 @@ export default {
 .underHeader__item:last-child {
   margin-right: 0px;
 }
+/* UnderHeader styles end */
+
+/* Main styles start */
 .main__wrapper {
   padding-top: 159px;
   max-width: 919px;
@@ -364,6 +372,11 @@ export default {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+@media (max-width: 600px) {
+  .main__wrapper {
+    width: 100vh;
+  }
 }
 .main__wrapper-title {
   display: flex;
@@ -392,6 +405,7 @@ export default {
   justify-content: center;
 }
 .main__underWrapper-title {
+  width: 380px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -401,10 +415,9 @@ export default {
   font-size: 40px;
   line-height: 122.4%;
 }
-/* .main__underItem:nth-child(2) {
-  animation-direction: reverse;
-} */
+/* Main styles end */
 
+/* FooterTop styles start */
 .footertop__wrapper {
   height: 320px;
   background: url(../static/footertop.svg) no-repeat center;
@@ -451,7 +464,9 @@ export default {
   padding-left: 9.88px;
   color: #ffffff;
 }
+/* FooterTop styles end */
 
+/* FooterBottom styles start */
 .footerbottom-wrapper {
   height: 86px;
   background: #2f2f2f;
@@ -477,6 +492,11 @@ export default {
 .footerbottom__item {
   margin-right: 44px;
 }
+.footerbottom__item:hover,
+.footerbottom__item:focus,
+.footerbottom__item:active {
+  opacity: 0.75;
+}
 .footerbottom__item:nth-child(4) {
   margin-right: 126px;
 }
@@ -490,4 +510,5 @@ export default {
   letter-spacing: 0.01em;
   color: #ffffff;
 }
+/* FooterBottom styles end */
 </style>
